@@ -14,10 +14,7 @@ docker push adminproject6/project:tagname
 docker pull adminproject6/project:dns
 
 6)run l'image
-docker run -t -d -P -v config:/etc/bind ba2d627efe01
+docker run -t -d -p -v 53:53 config:/etc/bind ba2d627efe01
 
-7) créer un ubuntu utilisateur
-docker pull ubuntu:18.04
-
-8) run un ubuntu
-docker run -it ubuntu
+8) run l'image employé pour vérifier
+docker run -it 5be7cc63ec5f

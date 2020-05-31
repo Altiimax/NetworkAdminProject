@@ -14,7 +14,7 @@ $TTL    604800
 ns              IN      A       51.178.40.200
 
 ; web
-serveurWeb      IN      A       51.178.40.9
+serveurWeb      IN      A       51.178.40.200
 www             IN      CNAME   serveurWeb
 b2b             IN      CNAME   serveurWeb
 
